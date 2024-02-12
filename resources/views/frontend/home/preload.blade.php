@@ -6,46 +6,31 @@
                         <div class="spinner"></div>
                         <div class="txt-loading">
                             <span data-text-preloader="E" class="letters-loading">
-                               S
+                               E
                             </span>
                             <span data-text-preloader="A" class="letters-loading">
-                                I
+                                A
                             </span>
                             <span data-text-preloader="S" class="letters-loading">
-                                M
+                                S
                             </span>
                             <span data-text-preloader="Y" class="letters-loading">
-                                P
+                                Y
                             </span>
                             <span data-text-preloader="L" class="letters-loading">
                                L
                             </span>
                             <span data-text-preloader="A" class="letters-loading">
-                                E
-                            </span>
-                            <span data-text-preloader="N" class="letters-loading">
-                                -
-                            </span>
-                            <span data-text-preloader="D" class="letters-loading">
-                                E
-                            </span>
-                            <span data-text-preloader="D" class="letters-loading">
-                                S
-                            </span>
-                            <span data-text-preloader="D" class="letters-loading">
-                                T
-                            </span>
-                            <span data-text-preloader="D" class="letters-loading">
                                 A
                             </span>
-                            <span data-text-preloader="D" class="letters-loading">
-                                T
+                            <span data-text-preloader="N" class="letters-loading">
+                                N
                             </span>
                             <span data-text-preloader="D" class="letters-loading">
-                                E
+                                D
                             </span>
                         </div>
-                    </div>
+                    </div>  
                 </div>
             </div>
         </div>

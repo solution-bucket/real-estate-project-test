@@ -23,6 +23,7 @@ class UserController extends Controller
 
     } // End Method
 
+
     public function UserProfileStore(Request $request){
 
         $id = Auth::user()->id;
@@ -66,6 +67,8 @@ class UserController extends Controller
         );
         return redirect('/login')->with($notification);
     }// End Method
+
+
     public function UserChangePassword(){
 
         return view('frontend.dashboard.change_password');
@@ -110,4 +113,26 @@ class UserController extends Controller
 
      }// End Method
 
+
+       public function UserScheduleRequest(){
+
+        $id = Auth::user()->id;
+        $userData = User::find($id);
+
+        $srequest = Schedule::where('user_id',$id)->get();
+        return view('frontend.message.schedule_request',compact('userData','srequest'));
+
+    } // End Method
+
+
+     public function LiveChat(){
+
+        $id = Auth::user()->id;
+        $userData = User::find($id);
+        return view('frontend.dashboard.live_chat',compact('userData'));
+
+    } // End Method
+
+
 }
+ 

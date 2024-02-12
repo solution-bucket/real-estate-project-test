@@ -50,11 +50,11 @@
             <div class="collapse" id="state">
               <ul class="nav sub-menu">
                 <li class="nav-item">
-                  <a href="" class="nav-link">All State</a>
+                  <a href="{{ route('all.state') }}" class="nav-link">All State</a>
                 </li>
 
                 <li class="nav-item">
-                  <a href="" class="nav-link">Add State</a>
+                  <a href="{{ route('add.state') }}" class="nav-link">Add State</a>
                 </li>
               </ul>
             </div>
@@ -100,14 +100,14 @@
           </li>
 
           <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="{{ route('admin.package.history') }}" class="nav-link">
               <i class="link-icon" data-feather="calendar"></i>
               <span class="link-title">Package History</span>
             </a>
           </li>
 
            <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="{{ route('admin.property.message') }}" class="nav-link">
               <i class="link-icon" data-feather="calendar"></i>
               <span class="link-title">Property Message </span>
             </a>
@@ -123,10 +123,10 @@
             <div class="collapse" id="testimonials">
               <ul class="nav sub-menu">
                 <li class="nav-item">
-                  <a href="" class="nav-link">All Testimonials</a>
+                  <a href="{{ route('all.testimonials') }}" class="nav-link">All Testimonials</a>
                 </li>
                 <li class="nav-item">
-                  <a href="" class="nav-link">Add Testimonials</a>
+                  <a href="{{ route('add.testimonials') }}" class="nav-link">Add Testimonials</a>
                 </li>
 
               </ul>
@@ -148,10 +148,10 @@
             <div class="collapse" id="uiComponents">
               <ul class="nav sub-menu">
                 <li class="nav-item">
-                  <a href="" class="nav-link">All Agent </a>
+                  <a href="{{route('all.agent')}}" class="nav-link">All Agent </a>
                 </li>
                 <li class="nav-item">
-                  <a href="pages/ui-components/alerts.html" class="nav-link">Add Agent</a>
+                  <a href="{{route('add.agent')}}" class="nav-link">Add Agent</a>
                 </li>
 
               </ul>
@@ -169,7 +169,7 @@
             <div class="collapse" id="blogcategory">
               <ul class="nav sub-menu">
                 <li class="nav-item">
-                  <a href="" class="nav-link">All Blog Category </a>
+                  <a href="{{ route('all.blog.category') }}" class="nav-link">All Blog Category </a>
                 </li>
 
 
@@ -187,11 +187,11 @@
             <div class="collapse" id="Post">
               <ul class="nav sub-menu">
                 <li class="nav-item">
-                  <a href="" class="nav-link">All Post </a>
+                  <a href="{{ route('all.post') }}" class="nav-link">All Post </a>
                 </li>
 
                 <li class="nav-item">
-                  <a href="" class="nav-link">Add Post </a>
+                  <a href="{{ route('add.post') }}" class="nav-link">Add Post </a>
                 </li>
 
 
@@ -200,21 +200,21 @@
           </li>
 
           <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="{{ route('admin.blog.comment') }}" class="nav-link">
               <i class="link-icon" data-feather="calendar"></i>
               <span class="link-title">Blog Comment </span>
             </a>
           </li>
 
            <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="{{ route('smtp.setting') }}" class="nav-link">
               <i class="link-icon" data-feather="calendar"></i>
               <span class="link-title">SMTP Setting </span>
             </a>
           </li>
 
           <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="{{ route('site.setting') }}" class="nav-link">
               <i class="link-icon" data-feather="calendar"></i>
               <span class="link-title">Site Setting </span>
             </a>
@@ -231,18 +231,18 @@
             <div class="collapse" id="advancedUI">
               <ul class="nav sub-menu">
                 <li class="nav-item">
-                  <a href="" class="nav-link">All Permission</a>
+                  <a href="{{ route('all.permission') }}" class="nav-link">All Permission</a>
                 </li>
                 <li class="nav-item">
-                  <a href="" class="nav-link">All Roles </a>
+                  <a href="{{ route('all.roles') }}" class="nav-link">All Roles </a>
                 </li>
 
                  <li class="nav-item">
-                  <a href="" class="nav-link">Role in Permission </a>
+                  <a href="{{ route('add.roles.permission') }}" class="nav-link">Role in Permission </a>
                 </li>
 
                 <li class="nav-item">
-                  <a href="" class="nav-link">All Role in Permission </a>
+                  <a href="{{ route('all.roles.permission') }}" class="nav-link">All Role in Permission </a>
                 </li>
 
               </ul>

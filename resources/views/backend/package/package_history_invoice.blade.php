@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Invoice</title>
 
-<style type="text/css"> 
+<style type="text/css">
     * {
         font-family: Verdana, Arial, sans-serif;
     }
@@ -48,15 +48,15 @@
     <tr>
         <td valign="top">
           <!-- {{-- <img src="" alt="" width="150"/> --}} -->
-          <h2 style="color: green; font-size: 26px;"><strong>EasyShop</strong></h2>
+          <h2 style="color: green; font-size: 26px;"><strong>Simple Estate</strong></h2>
         </td>
         <td align="right">
             <pre class="font" >
-               EasyShop Head Office
-               Email:support@easylearningbd.com <br>
+               Simple Estate Head Office
+               Email:support@simpleestate.com <br>
                Mob: 1245454545 <br>
-               Dhaka 1207,Dhanmondi:#4 <br>
-              
+              Monrovia 1207, Broad Street <br>
+
             </pre>
         </td>
     </tr>
@@ -73,15 +73,15 @@
            <strong>Name:</strong> {{ $packagehistory->user->name }} <br>
            <strong>Email:</strong> {{ $packagehistory->user->email }} <br>
            <strong>Phone:</strong> {{ $packagehistory->user->phone }} <br>
-           
-           <strong>Address:</strong>{{ $packagehistory->user->address }}  
-          
+
+           <strong>Address:</strong>{{ $packagehistory->user->address }}
+
          </p>
         </td>
         <td>
           <p class="font">
             <h3><span style="color: green;">Invoice:</span> #{{ $packagehistory->invoice }}</h3>
-            Order Date: {{ $packagehistory->created_at }} <br> 
+            Order Date: {{ $packagehistory->created_at }} <br>
             Payment Type : COD </span>
          </p>
         </td>
@@ -91,12 +91,12 @@
 <h3>Property Package </h3>
 
 
-   
- 
+
+
   <table width="100%">
     <thead style="background-color: green; color:#FFFFFF;">
       <tr class="font">
-        
+
       <th>Package Name </th>
       <th class="text-end">Property Quantity</th>
       <th class="text-end">Unit cost</th>
@@ -105,15 +105,15 @@
     </thead>
     <tbody>
 
-     
+
       <tr class="font">
          <td align="center"> {{ $packagehistory->package_name }}</td>
         <td align="center">{{ $packagehistory->package_credits }}</td>
         <td align="center">$ {{ $packagehistory->package_amount }}</td>
         <td align="center">$ {{ $packagehistory->package_amount }}</td>
-       
+
       </tr>
-      
+
     </tbody>
   </table>
 

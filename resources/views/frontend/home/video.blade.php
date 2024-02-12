@@ -1,4 +1,4 @@
-<section class="video-section centred" style="background-image: url({{ asset('frontend/assets/images/background/video-1.jpg') }});">
+ <section class="video-section centred" style="background-image: url({{ asset('frontend/assets/images/background/video-1.jpg') }});">
             <div class="auto-container">
                 <div class="video-inner">
                     <div class="video-btn">

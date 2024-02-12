@@ -96,7 +96,7 @@
                     </div>
                 </form>
                 <div class="othre-text">
-                    <p>Have not any account? <a href="signup.html">Register Now</a></p>
+                    <p>Have not any account? <a href="{{ route('register')}}">Register Now</a></p>
                 </div>
             </div>
         </div>

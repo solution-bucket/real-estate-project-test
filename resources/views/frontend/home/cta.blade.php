@@ -1,4 +1,4 @@
-<section class="cta-section bg-color-2">
+  <section class="cta-section bg-color-2">
             <div class="pattern-layer" style="background-image: url({{ asset('frontend/assets/images/shape/shape-2.png') }});"></div>
             <div class="auto-container">
                 <div class="inner-box clearfix">

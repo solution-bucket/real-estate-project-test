@@ -2,7 +2,7 @@
 @section('admin')
 
 <div class="page-content">
-        
+
         <div class="row inbox-wrapper">
           <div class="col-lg-12">
             <div class="card">
@@ -15,7 +15,7 @@
                       </button>
                       <div class="order-first">
                         <h4>Mail Service</h4>
-                        <p class="text-muted">Support@easylearningbd.com</p>
+                        <p class="text-muted">Support@simpleestate.com</p>
                       </div>
                     </div>
                     <div class="d-grid my-3">
@@ -30,9 +30,9 @@
                             <span class="badge bg-danger fw-bolder ms-auto">{{ count($usermsg) }}
                           </a>
                         </li>
-                         
-                        
-                        
+
+
+
                       </ul>
                       <p class="text-muted tx-12 fw-bolder text-uppercase mb-2 mt-4">Labels</p>
                       <ul class="nav flex-column">
@@ -44,14 +44,14 @@
                         </li>
                         <li class="nav-item">
                           <a class="nav-link d-flex align-items-center" href="#">
-                          <i data-feather="tag" class="text-primary icon-lg me-2"></i> 
-                          Business 
+                          <i data-feather="tag" class="text-primary icon-lg me-2"></i>
+                          Business
                         </a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link d-flex align-items-center" href="#">
-                            <i data-feather="tag" class="text-info icon-lg me-2"></i> 
-                            Inspiration 
+                            <i data-feather="tag" class="text-info icon-lg me-2"></i>
+                            Inspiration
                           </a>
                         </li>
                       </ul>
@@ -75,15 +75,15 @@
                         </div>
                       </div>
                     </div>
-                    
+
                     <div class="email-list">
 
-                      
-                      
+
+
       <!-- email list item -->
       @foreach($usermsg as $msg)
       <div class="email-list-item">
-        
+
         <a href=" " class="email-list-detail">
           <div class="content">
             <span class="from">{{ $msg['user']['name'] }}</span>
@@ -96,13 +96,13 @@
         </a>
       </div>
     @endforeach
-                  
-                    
+
+
 
                     </div>
                   </div>
                 </div>
-                
+
               </div>
             </div>
           </div>

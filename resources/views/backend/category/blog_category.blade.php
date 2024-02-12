@@ -6,7 +6,7 @@
 
 				<nav class="page-breadcrumb">
 					<ol class="breadcrumb">
-	  
+
     <button type="button" class="btn btn-inverse-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Add Category
 </button>
@@ -18,7 +18,7 @@
             <div class="card">
               <div class="card-body">
                 <h6 class="card-title">Blog Category All </h6>
-               
+
                 <div class="table-responsive">
                   <table id="dataTableExample" class="table">
                     <thead>
@@ -26,7 +26,7 @@
                         <th>Sl </th>
                         <th>Blog Category Name </th>
                         <th>Blog Category Slug </th>
-                        <th>Action </th> 
+                        <th>Action </th>
                       </tr>
                     </thead>
                     <tbody>
@@ -36,13 +36,13 @@
                         <td>{{ $item->category_name }}</td>
                         <td>{{ $item->category_slug }}</td>
                         <td>
-         
-  <button type="button" class="btn btn-inverse-warning" data-bs-toggle="modal" data-bs-target="#catedit" id="{{ $item->id }}" onclick="categoryEdit(this.id)" > 
+
+  <button type="button" class="btn btn-inverse-warning" data-bs-toggle="modal" data-bs-target="#catedit" id="{{ $item->id }}" onclick="categoryEdit(this.id)" >
  Edit
 </button>
 
        <a href="{{ route('delete.blog.category',$item->id) }}" class="btn btn-inverse-danger" id="delete"> Delete  </a>
-                        </td> 
+                        </td>
                       </tr>
                      @endforeach
                     </tbody>
@@ -68,18 +68,18 @@
 
         <form method="POST" action="{{ route('store.blog.category') }}" class="forms-sample">
         @csrf
- 
+
 
         <div class="form-group mb-3">
  <label for="exampleInputEmail1" class="form-label">Blog Category Name </label>
-        <input type="text" name="category_name" class="form-control" >
-           
-        </div> 
-     
+        <input type="text" name="category_name" class="form-control" required >
 
-      </div> 
+        </div>
+
+
+      </div>
       <div class="modal-footer">
-        
+
     <button type="submit" class="btn btn-primary">Save changes</button>
       </div>
    </form>
@@ -102,19 +102,19 @@
 
         <form method="POST" action="{{ route('update.blog.category') }}" class="forms-sample">
         @csrf
- 
+
     <input type="hidden" name="cat_id" id="cat_id">
 
         <div class="form-group mb-3">
  <label for="exampleInputEmail1" class="form-label">Blog Category Name </label>
   <input type="text" name="category_name" class="form-control" id="cat" >
-           
-        </div> 
-     
 
-      </div> 
+        </div>
+
+
+      </div>
       <div class="modal-footer">
-        
+
     <button type="submit" class="btn btn-primary">Save changes</button>
       </div>
    </form>
@@ -135,7 +135,7 @@
           // console.log(data)
           $('#cat').val(data.category_name);
           $('#cat_id').val(data.id);
-        } 
+        }
       })
     }
 

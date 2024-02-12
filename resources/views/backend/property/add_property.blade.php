@@ -72,7 +72,7 @@
          <div class="col-sm-6">
             <div class="form-group mb-3">
                 <label class="form-label">Multiple Image </label>
-                <input type="file" name="multi_img[]" class="form-control" id="multiImg" multiple="">
+                <input type="file" name="multi_img[]" class="form-control" id="multiImg" multiple="" >
 
          <div class="row" id="preview_img"> </div>
 
@@ -135,7 +135,9 @@
                 <label class="form-label">State</label>
                 <select name="state" class="form-select" id="exampleFormControlSelect1">
                 <option selected="" disabled="">Select State</option>
-
+               @foreach($pstate as $state)
+                <option value="{{ $state->id }}">{{ $state->state_name }}</option>
+               @endforeach
             </select>
             </div>
         </div><!-- Col -->
